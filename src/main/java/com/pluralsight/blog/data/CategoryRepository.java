@@ -8,6 +8,10 @@ import java.util.List;
 import java.util.Optional;
 
 
+public interface CategoryRepository extends JpaRepository<Category, Long> {}
+
+/*
+
 @Component
 public class CategoryRepository {
 
@@ -19,3 +23,4 @@ public class CategoryRepository {
         return null;
     }
 }
+*/
