@@ -12,6 +12,7 @@ public class Category {
     private Long id;
     private String name;
 
+    @OneToMany
     private List<Post> posts;
 
     public Category() {
@@ -31,7 +32,7 @@ public class Category {
         this.name = name;
     }
 
-    public List<Post> getPosts() {
+    public List <Post> getPosts() {
         return posts;
     }
 
